@@ -1,7 +1,7 @@
 
 _G.ALLOWED_USERNAMES = {
     "Zygodactor",
-    "Eagl3_Frost2022",
+    "",
 }
 
 _G.PLAY_DELAY_SECONDS = 60
