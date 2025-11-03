@@ -1,7 +1,7 @@
 
 _G.ALLOWED_USERNAMES = {
     "Zygodactor",
-    "",
+    "Mkeffuns",
 }
 
 _G.PLAY_DELAY_SECONDS = 60
