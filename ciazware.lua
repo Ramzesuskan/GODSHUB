@@ -1093,6 +1093,6 @@ library.configuration = {
        TabHighlightColor = Color3.fromRGB(30, 30, 30),
        
        DisplayFpsAndPing = true,
-       UIToggleKey = Enum.KeyCode.RigtAlt,
+       UIToggleKey = Enum.KeyCode.LeftAlt,
    },
 };
