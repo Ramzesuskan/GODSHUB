@@ -24,7 +24,7 @@ local library, patches = {
             TabHighlightColor = Color3.fromRGB(30, 30, 30), -- The BackGroundColor3 of tab and sub-tabs/sections when you click them
             
             DisplayFpsAndPing = true, -- displays your fps and ping in the top right corner of the ui 
-            UIToggleKey = Enum.KeyCode.RightAlt, -- the key to toggle the ui's Visible property on/true and off/false
+            UIToggleKey = Enum.KeyCode.LeftAlt, -- the key to toggle the ui's Visible property on/true and off/false
         },
     },
 }, {};
@@ -1093,6 +1093,6 @@ library.configuration = {
        TabHighlightColor = Color3.fromRGB(30, 30, 30),
        
        DisplayFpsAndPing = true,
-       UIToggleKey = Enum.KeyCode.RightAlt,
+       UIToggleKey = Enum.KeyCode.LefttAlt,
    },
 };
