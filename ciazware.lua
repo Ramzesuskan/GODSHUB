@@ -1096,13 +1096,3 @@ library.configuration = {
        UIToggleKey = Enum.KeyCode.RightAlt,
    },
 };
-
-local UI = library.new("METAWARE **TESTING_GAME**");
-local UI_TAB = UI.AddTab("Test Tab")
-local UI_SECTION = UI_TAB.AddSection();
-
-local UI_SUBSECTION = UI_SECTION.AddSubSection("Test SUBSECTION");
-local UI_TOGGLE = UI_SUBSECTION.AddToggle("toggle", function(state)
-   print(tostring(state));
-end, "Left")
-local UI_TOGGLE_TOOLTIP = UI_TOGGLE.AddToolTip("test!")
