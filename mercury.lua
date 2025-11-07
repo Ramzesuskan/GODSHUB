@@ -14,11 +14,6 @@
 █░░░░░░██████████░░░░░░█░░░░░░░░░░░░░░█░░░░░░██░░░░░░░░░░█░░░░░░░░░░░░░░█░░░░░░░░░░░░░░█░░░░░░██░░░░░░░░░░███████░░░░░░███████
 ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
 
-edited: 1/26
-developers:
-discord Abstract#8007
-discord Deity#0228
-
 ]]
 
 local TweenService = game:GetService("TweenService")
@@ -919,9 +914,9 @@ function Library:create(options)
 
 	rawset(mt, "creditsContainer", creditsTab.container)
 
-	creditsTab:credit{Name = "Abstract", Description = "UI Library Developer", Discord = "nil", V3rmillion = "nil"}
-	creditsTab:credit{Name = "Deity", Description = "UI Library Developer", Discord = "nil", V3rmillion = "nil"}
-	creditsTab:credit{Name = "Repository", Description = "UI Library Repository", Github="nil"}
+	creditsTab:credit{Name = "", Description = "", Discord = "", V3rmillion = ""}
+	creditsTab:credit{Name = "", Description = "", Discord = "", V3rmillion = ""}
+	creditsTab:credit{Name = "", Description = "", Github=""}
 
 	return mt
 end
