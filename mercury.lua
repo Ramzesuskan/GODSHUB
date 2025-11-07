@@ -425,10 +425,10 @@ function Library:create(options)
 	end
 
 	options = self:set_defaults({
-		Name = "Mercury",
+		Name = "Moon",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
-		Link = "https://github.com/7g0d/mercury-ware"
+		Link = "https://github.com/7g0d/moon-ware"
 	}, options)
 
 	if getgenv and getgenv().MercuryUI then
