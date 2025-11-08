@@ -1083,15 +1083,16 @@ function Library:tab(options)
 
 	if not options.Internal then
 quickAccessButton = self.quickAccess:object("TextButton", {
-    Size = UDim2.fromOffset(125, 20),
+    Size = UDim2.fromOffset(140, 20),  -- +15px под иконку
     Theme = {BackgroundColor3 = "Secondary"},
     Text = options.Name,
     TextSize = 14,
-    TextXAlignment = Enum.TextXAlignment.Left  
+    TextXAlignment = Enum.TextXAlignment.Left  -- Текст после иконки
 }):round(5)
 
+-- === ФИКС: ДОБАВЛЯЕМ ИКОНКУ ===
 if options.Icon then
-    local icon = quickAccessButton:object("ImageLabel", {
+    local quickAccessIcon = quickAccessButton:object("ImageLabel", {
         Name = "TabIcon",
         Size = UDim2.fromOffset(16, 16),
         Position = UDim2.fromOffset(6, 2),
@@ -1100,6 +1101,13 @@ if options.Icon then
         ZIndex = quickAccessButton.ZIndex + 1
     })
 end
+
+		quickAccessIcon = quickAccessButton:object("ImageLabel", {
+			BackgroundTransparency = 1,
+			Theme = {ImageColor3 = "StrongText"},
+			Image = options.Icon,
+			Size = UDim2.fromScale(0.5, 0.5),
+			Centered = true
 		})
 	else
 		quickAccessButton = options.Internal
