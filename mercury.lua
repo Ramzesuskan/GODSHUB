@@ -427,7 +427,7 @@ function Library:create(options)
 	end
 
 	options = self:set_defaults({
-		Name = "Moon",
+		Name = "Moon-Ware",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
 		Link = "https://github.com/7g0d/moon-ware"
