@@ -427,7 +427,7 @@ function Library:create(options)
 	end
 
 	options = self:set_defaults({
-		Name = "Moon-Ware",
+		Name = "Moon",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
 		Link = "https://github.com/7g0d/moon-ware"
@@ -1108,10 +1108,10 @@ function Library:tab(options)
 
 	local tabButton = Library:object("TextButton", {
 		BackgroundTransparency = 1,
-		Parent = self.navigation.AbsoluteObject,
+		Parent = self.nilFolder.AbsoluteObject,
 		Theme = {BackgroundColor3 = "Secondary"},
 		Size = UDim2.new(0, 125, 0, 25),
-		Visible = true
+		Visible = false
 	}):round(5)
 
 	self.Tabs[#self.Tabs+1] = {tab, tabButton, options.Name}
