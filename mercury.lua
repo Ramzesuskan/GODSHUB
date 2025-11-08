@@ -1108,10 +1108,10 @@ function Library:tab(options)
 
 	local tabButton = Library:object("TextButton", {
 		BackgroundTransparency = 1,
-		Parent = self.nilFolder.AbsoluteObject,
+		Parent = self.navigation.AbsoluteObject,
 		Theme = {BackgroundColor3 = "Secondary"},
 		Size = UDim2.new(0, 125, 0, 25),
-		Visible = false
+		Visible = true
 	}):round(5)
 
 	self.Tabs[#self.Tabs+1] = {tab, tabButton, options.Name}
